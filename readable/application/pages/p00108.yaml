@@ -1,0 +1,821 @@
+---
+# ====== Page: Semana 08 =====================================
+id: 108
+identification: 
+  name: Semana 08
+  alias: SEMANA-08
+  title: Semana 08
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+css: 
+  inline: |
+    .x{
+    text-align: justify;
+    }
+
+security: 
+  authentication: Page Is Public
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-meta-tags: false
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: Breadcrumb ==================================
+  id: 29075551567409171801
+  identification: 
+    title: Breadcrumb
+    type: Breadcrumb
+
+  source: 
+    breadcrumb: Breadcrumb # 29074273800660126645
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    position: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Title Bar # 29074389537844126692
+    template-options: 
+    - '#DEFAULT#'
+    - t-BreadcrumbRegion--useBreadcrumbTitle
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    appearance: 
+      breadcrumb-template: Breadcrumb # 29074651921592126718
+      template-options: 
+      - '#DEFAULT#'
+
+- # ====== Region: Seguridad de Sistemas =======================
+  id: 29145848113104600816
+  identification: 
+    title: Seguridad de Sistemas
+    type: Static Content
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    position: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard # 29074377190318126687
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: ENCABEZADO ==================================
+  id: 29170711614552383037
+  identification: 
+    title: ENCABEZADO
+    type: Static Content
+
+  layout: 
+    sequence: 10
+    parent-region: Seguridad de Sistemas # 29145848113104600816
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Blank with Attributes # 29074310515021126661
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: BLOQUE_A ====================================
+  id: 29170711807557383039
+  identification: 
+    title: BLOQUE_A
+    type: Static Content
+
+  layout: 
+    sequence: 20
+    parent-region: Seguridad de Sistemas # 29145848113104600816
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard # 29074377190318126687
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: BLOQUE_B ====================================
+  id: 29170711981161383040
+  identification: 
+    title: BLOQUE_B
+    type: Static Content
+
+  layout: 
+    sequence: 30
+    parent-region: Seguridad de Sistemas # 29145848113104600816
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard # 29074377190318126687
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+page-items: 
+- # ====== Page Item: P108_ENCABEZADO ==========================
+  id: 29170711746510383038
+  identification: 
+    name: P108_ENCABEZADO
+    type: Display Only
+
+  label: 
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 10
+    region: ENCABEZADO # 29170711614552383037
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      
+      La seguridad de sistemas desempeña un papel crucial en el contexto de la gobernanza de datos, ya que los sistemas informáticos son la infraestructura principal a través de la cual se gestionan, almacenan y procesan los datos. Aquí se describen cómo la seguridad de sistemas se relaciona con la gobernanza de datos:
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_IMAGEN ==============================
+  id: 29170712074240383041
+  identification: 
+    name: P108_IMAGEN
+    type: Display Image
+
+  label: 
+    alignment: Left
+
+  settings: 
+    based-on: Image URL stored in Page Item Value
+
+  layout: 
+    sequence: 10
+    region: BLOQUE_B # 29170711981161383040
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: 'https://www.cic.es/wp-content/uploads/2016/10/Seguridad-informatica-min.jpg'
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA ================================
+  id: 29170712113799383042
+  identification: 
+    name: P108_DATA
+    type: Display Only
+
+  label: 
+    label: '<b>Control de Acceso a Sistemas:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 10
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Los sistemas deben implementar medidas de control de acceso para garantizar que solo usuarios autorizados tengan acceso a la infraestructura y a los datos almacenados en ella.
+      * La gobernanza de datos establece políticas que deben ser aplicadas y reforzadas a través de los sistemas para controlar quién puede acceder, modificar o eliminar datos.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_1 ==============================
+  id: 29170712238506383043
+  identification: 
+    name: P108_DATA_1
+    type: Display Only
+
+  label: 
+    label: '<b>Autenticación y Autorización:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 20
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * La autenticación verifica la identidad de los usuarios, mientras que la autorización determina qué acciones pueden realizar. Los sistemas deben implementar mecanismos sólidos de autenticación y autorización para garantizar la seguridad de los datos.
+      * La gobernanza de datos especifica los niveles de acceso y las funciones permitidas para diferentes usuarios, y los sistemas deben aplicar estas políticas.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_2 ==============================
+  id: 29170712373566383044
+  identification: 
+    name: P108_DATA_2
+    type: Display Only
+
+  label: 
+    label: '<b>Cifrado de Datos:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 30
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Los datos almacenados y transmitidos deben cifrarse para proteger la confidencialidad y la integridad. Los sistemas deben implementar protocolos de cifrado adecuados.
+      * La gobernanza de datos puede establecer requisitos específicos para el cifrado de datos, y los sistemas deben cumplir con estas políticas.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_3 ==============================
+  id: 29170712425629383045
+  identification: 
+    name: P108_DATA_3
+    type: Display Only
+
+  label: 
+    label: '<b>Monitoreo y Auditoría:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 40
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Los sistemas deben ser capaces de monitorear las actividades, registrar eventos y permitir auditorías para detectar posibles amenazas o actividades inusuales.
+      * La gobernanza de datos puede requerir la implementación de un monitoreo constante para garantizar la conformidad con las políticas y normativas.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_4 ==============================
+  id: 29170712566512383046
+  identification: 
+    name: P108_DATA_4
+    type: Display Only
+
+  label: 
+    label: '<b>Gestión de Parches y Actualizaciones:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 50
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Mantener los sistemas actualizados con los últimos parches de seguridad es esencial para proteger contra vulnerabilidades conocidas.
+      * La gobernanza de datos puede incluir políticas que exijan la aplicación oportuna de parches de seguridad para mitigar riesgos.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_5 ==============================
+  id: 29170712617218383047
+  identification: 
+    name: P108_DATA_5
+    type: Display Only
+
+  label: 
+    label: '<b>Respaldo y Recuperación:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 60
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Los sistemas deben implementar estrategias de respaldo para garantizar la disponibilidad de datos y la rápida recuperación en caso de pérdida de datos o fallos.
+      * La gobernanza de datos puede definir requisitos para la frecuencia y la eficacia de los procedimientos de respaldo.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_6 ==============================
+  id: 29170712731513383048
+  identification: 
+    name: P108_DATA_6
+    type: Display Only
+
+  label: 
+    label: '<b>Protección contra Malware y Amenazas:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 70
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Los sistemas deben contar con herramientas antivirus y antimalware para proteger contra amenazas cibernéticas.
+      * La gobernanza de datos puede incluir políticas específicas para la detección y prevención de malware.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P108_DATA_7 ==============================
+  id: 29170712824272383049
+  identification: 
+    name: P108_DATA_7
+    type: Display Only
+
+  label: 
+    label: '<b>Cumplimiento Regulatorio:</b>'
+    alignment: Left
+
+  settings: 
+    format: Plain Text
+    based-on: Item Value
+    show-line-breaks: true
+    send-on-page-submit: true
+
+  layout: 
+    sequence: 80
+    region: BLOQUE_A # 29170711807557383039
+    position: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating # 29074647840129126716
+    template-options: 
+    - '#DEFAULT#'
+
+  advanced: 
+    css-classes: 
+    - x
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  default: 
+    type: Static
+    static-value: |
+      * Los sistemas deben estar configurados para cumplir con las regulaciones y normativas de seguridad de datos aplicables.
+      * La gobernanza de datos establece requisitos de cumplimiento, y los sistemas deben adaptarse y demostrar conformidad.
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+

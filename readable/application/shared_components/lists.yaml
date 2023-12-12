@@ -1,0 +1,481 @@
+---
+- # ====== List: Navigation Menu ===============================
+  id: 29074274386532126646
+  identification: 
+    name: Navigation Menu
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: Contenido ====================================
+    id: 29074556310964830004
+    label: 
+      label: Contenido
+
+    icon: 
+      image/icon-css-classes: fa-archive
+
+    layout: 
+      sequence: 20
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 100
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:100:&APP_SESSION.::&DEBUG.:::'
+        page: 100 # Contenido
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Home =========================================
+    id: 29074773927642126840
+    label: 
+      label: Home
+
+    icon: 
+      image/icon-css-classes: fa-home
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # Home
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 01 ====================================
+    id: 29075357339048840811
+    label: 
+      label: Semana 01
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 30
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 101
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:101:&APP_SESSION.::&DEBUG.:::'
+        page: 101 # Semana 01
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 03 ====================================
+    id: 29075368234488847127
+    label: 
+      label: Semana 03
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 50
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 103
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:103:&APP_SESSION.::&DEBUG.:::'
+        page: 103 # Semana 03
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 04 ====================================
+    id: 29075384911502851377
+    label: 
+      label: Semana 04
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 60
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 104
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:104:&APP_SESSION.::&DEBUG.:::'
+        page: 104 # Semana 04
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 05 ====================================
+    id: 29075389848186853094
+    label: 
+      label: Semana 05
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 70
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 105
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:105:&APP_SESSION.::&DEBUG.:::'
+        page: 105 # Semana 05
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 02 ====================================
+    id: 29075489951157157832
+    label: 
+      label: Semana 02
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 40
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 102
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:102:&APP_SESSION.::&DEBUG.:::'
+        page: 102 # Semana 02
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 08 ====================================
+    id: 29075551109598171800
+    label: 
+      label: Semana 08
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 100
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 108
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:108:&APP_SESSION.::&DEBUG.:::'
+        page: 108 # Semana 08
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 06 ====================================
+    id: 29075610399514855735
+    label: 
+      label: Semana 06
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 80
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 106
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:106:&APP_SESSION.::&DEBUG.:::'
+        page: 106 # Semana 06
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 07 ====================================
+    id: 29075939426731857500
+    label: 
+      label: Semana 07
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 90
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 107
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:107:&APP_SESSION.::&DEBUG.:::'
+        page: 107 # Semana 07
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 10 ====================================
+    id: 29097178430813932266
+    label: 
+      label: Semana 10
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 120
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 110
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:110:&APP_SESSION.::&DEBUG.:::'
+        page: 110 # Semana 10
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 09 ====================================
+    id: 29099826738776240396
+    label: 
+      label: Semana 09
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 110
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 9
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:9:&APP_SESSION.::&DEBUG.:::'
+        page: 9 # Semana 09
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Semana 11 ====================================
+    id: 29147498012108660207
+    label: 
+      label: Semana 11
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 130
+      parent-entry: Contenido # 29074556310964830004
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 111
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:111:&APP_SESSION.::&DEBUG.:::'
+        page: 111 # Semana 11
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Autor ========================================
+    id: 29148629961671982360
+    label: 
+      label: Autor
+
+    icon: 
+      image/icon-css-classes: fa-user-circle
+
+    layout: 
+      sequence: 140
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 500
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:500:&APP_SESSION.::&DEBUG.:::'
+        page: 500 # Autor
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+- # ====== List: Navigation Bar ================================
+  id: 29074763380297126830
+  identification: 
+    name: Navigation Bar
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: &APP_USER. ===================================
+    id: 29074775427642126843
+    label: 
+      label: '&APP_USER.'
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '#'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: has-username
+
+  - # ====== Entry: --- ==========================================
+    id: 29074775988585126843
+    label: 
+      label: '---'
+
+    layout: 
+      sequence: 20
+      parent-entry: '&APP_USER.' # 29074775427642126843
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: separator
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+  - # ====== Entry: Sign Out =====================================
+    id: 29074776369716126843
+    label: 
+      label: Sign Out
+
+    icon: 
+      image/icon-css-classes: fa-sign-out
+
+    layout: 
+      sequence: 30
+      parent-entry: '&APP_USER.' # 29074775427642126843
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '&LOGOUT_URL.'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+

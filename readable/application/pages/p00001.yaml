@@ -1,0 +1,358 @@
+---
+# ====== Page: Home ==========================================
+id: 1
+identification: 
+  name: Home
+  alias: HOME
+  title: MBD301_PORTAFOLIO
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+css: 
+  inline: |
+    .justificarTexto{
+    text-align: justify;
+    }
+
+security: 
+  authentication: Page Is Public
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-meta-tags: false
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: CONTENIDO ===================================
+  id: 24648624818873762234
+  identification: 
+    title: CONTENIDO
+    type: Static Content
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    position: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Blank with Attributes # 29074310515021126661
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: DATA01 ======================================
+  id: 24648624925199762235
+  identification: 
+    title: DATA01
+    type: Static Content
+
+  layout: 
+    sequence: 10
+    parent-region: CONTENIDO # 24648624818873762234
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Blank with Attributes # 29074310515021126661
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: DATA02 ======================================
+  id: 24648625003188762236
+  identification: 
+    title: DATA02
+    type: Static Content
+
+  layout: 
+    sequence: 20
+    parent-region: CONTENIDO # 24648624818873762234
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Blank with Attributes # 29074310515021126661
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: Bienvenido al Portafolio Digital del Curso de
+  id: 24648625101885762237
+  identification: 
+    title: Bienvenido al Portafolio Digital del Curso de Gobernanza de la Información
+    type: Static Content
+
+  source: 
+    html-code: |
+      <p class="justificarTexto">
+      En la era digital actual, la información se ha convertido en uno de los activos más valiosos para organizaciones de todo tipo. 
+      La capacidad de gestionar de manera efectiva esta ingente cantidad de datos es fundamental para el éxito y la sostenibilidad de cualquier entidad. 
+      Este portafolio digital es el resultado de un curso exhaustivo diseñado para equiparte con las habilidades esenciales de gobernanza de la información, proporcionándote una visión profunda de cómo administrar, proteger y aprovechar la información de manera estratégica.</p>
+
+  layout: 
+    sequence: 10
+    parent-region: DATA01 # 24648624925199762235
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard # 29074377190318126687
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: Contenido del Portafolio Digital ============
+  id: 24648625257571762238
+  identification: 
+    title: Contenido del Portafolio Digital
+    type: Static Content
+
+  source: 
+    html-code: |
+      <p class="justificarTexto">
+      Dentro de este portafolio, encontrarás una variedad de proyectos, estudios de caso y reflexiones personales que ilustran tu comprensión y aplicación de los conceptos clave aprendidos durante el curso. Desde el diseño de políticas de gestión de datos hasta la implementación de prácticas de seguridad de la información, cada elemento refleja tu progresión y habilidades adquiridas a lo largo de esta experiencia educativa.
+      </p>
+
+  layout: 
+    sequence: 30
+    parent-region: DATA01 # 24648624925199762235
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard # 29074377190318126687
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: ¿Qué es la Gobernanza de la Información? ====
+  id: 24648625362513762239
+  identification: 
+    title: ¿Qué es la Gobernanza de la Información?
+    type: Static Content
+
+  source: 
+    html-code: |
+      <p class="justificarTexto">
+      La gobernanza de la información va más allá de la simple gestión de datos. Se trata de un enfoque integral que abarca políticas, procesos, tecnologías y personas para garantizar que la información sea manejada de manera eficiente, segura y alineada con los objetivos organizativos. Este curso te sumergirá en los principios fundamentales de la gobernanza de la información, proporcionándote las herramientas necesarias para enfrentar los desafíos actuales y futuros en el ámbito de la gestión de datos.
+      </p>
+
+  layout: 
+    sequence: 20
+    parent-region: DATA01 # 24648624925199762235
+    position: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard # 29074377190318126687
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: Portafolio Gobernanza de la Información =====
+  id: 29074774815111126841
+  identification: 
+    title: Portafolio Gobernanza de la Información
+    type: Static Content
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    position: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Hero # 29074343819969126674
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  image: 
+    file-url: '#APP_FILES#icons/app-icon-512.png'
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
